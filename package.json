@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
-    "build": "webpack --config webpack.config.js",
-    "a-command-to-build-from-a-starting-file-to-a-output-file": "webpack ./src/entry-point.js ./build/build.js --config ./build_config/webpack.config.js",
+    "build": "webpack ./src/entry-point.js ./build/build.js --config ./build_config/webpack.config.js",
+    "a-command-to-production-build-from-a-starting-file-to-a-output-file": "webpack ./src/entry-point.js ./build/build.js --config ./build_config/webpack.config.js",
     "lint": "eslint src && echo \"eslint: no lint errors\""
   },
   "author": "",
