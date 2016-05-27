@@ -43,21 +43,6 @@ function GetModels(state=null,action){
     switch(action.type){
         case FETCH_MODELS:
             return action.payload.data;
-            /* FIX THIS LATER IF EVER NEEDED TO HAVE MULTIPLE VEHICLE SELECTORS ON THE PAGE
-            var source = action.meta.source.name;
-            var year = action.meta.year;
-            if(state===null || !state[source]){
-                var obj = {};
-                obj[source] = {};
-                obj[source][year] = action.payload.data;
-                return Object.assign({}, state, obj);
-            }
-            if(!state[source][year]){
-                var s = Object.assign({}, state, {});
-                s[source][year] = action.payload.data
-                return s;
-            }
-            */
     }
     return state;
 }
@@ -65,21 +50,6 @@ function GetOptions(state=null,action){
     switch(action.type){
         case FETCH_OPTIONS:
             return action.payload.data;
-            /* FIX THIS LATER IF EVER NEEDED TO HAVE MULTIPLE VEHICLE SELECTORS ON THE PAGE
-            var source = action.meta.source.name;
-            var year = action.meta.year;
-            if(state===null || !state[source]){
-                var obj = {};
-                obj[source] = {};
-                obj[source][year] = action.payload.data;
-                return Object.assign({}, state, obj);
-            }
-            if(!state[source][year]){
-                var s = Object.assign({}, state, {});
-                s[source][year] = action.payload.data
-                return s;
-            }
-            */
     }
     return state;
 }
